@@ -27,7 +27,7 @@ def save_picture(form_picture):
 def send_reset_email(user):
     token = user.get_reset_token()
     msg = Message('Password Reset Request', 
-                   sender='hello2000love@gmail.com',
+                   sender='Yourmailid@gmail.com',
                    recipients=[user.email]
                    )
     # external = True is used for getting an absolute url rather than having relative url
